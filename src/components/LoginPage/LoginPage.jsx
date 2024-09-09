@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import './LoginPage.css';
-
+import GoogleAuth from '../../authentication/google.auth';
 const LoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Username:', username);
-    console.log('Password:', password);
+   // console.log('Username:', username);
+   // console.log('Password:', password);
   };
 
   return (
@@ -25,12 +25,7 @@ const LoginPage = () => {
       <div className="right">
         <div className="login-content">
           <h2 className="signin-heading">Sign into Dribble</h2>
-          <div className="google-signin-container">
-            <button className="google-signin-button">
-              <img src="/google_icon.png" alt="Google" className="google-icon" />
-              Sign in with Google
-            </button>
-          </div>
+            <GoogleAuth/>
           <div className="login-card">
             <form className="login-form" onSubmit={handleSubmit}>
               <label htmlFor="username" className="input-label">Username or Email</label>
@@ -54,7 +49,7 @@ const LoginPage = () => {
                 autoComplete="current-password"
               />
               <button type="submit" className="submit-button">Sign In</button>
-              <a href="/forgot-password" className="forget-password">Forget Password?</a>
+              <a href="/forgot-password" className="forgot-password">Forget Password?</a>
               <p className="signup-link">
                 Don’t have an account? <a href="/signup">Sign Up</a>
               </p>

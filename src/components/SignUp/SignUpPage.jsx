@@ -1,10 +1,7 @@
-
-
 import React, { useState } from 'react';
 import './SignupPage.css';
 
 const SignupPage = () => {
-  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
 
 
