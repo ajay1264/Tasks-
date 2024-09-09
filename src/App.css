@@ -1,0 +1,144 @@
+/* src/components/LoginPage.css */
+
+/* Overall layout */
+.main {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar on the left */
+.left {
+  width: 400px; /* Adjust the width as needed */
+  background-color: #333; /* Sidebar background color */
+  color: white; /* Text color */
+  padding: 0; /* Remove padding to ensure video covers full area */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a better look */
+  display: flex;
+  align-items: center; /* Center video vertically */
+  justify-content: center; /* Center video horizontally */
+}
+/* Sidebar video styling */
+.sidebar-video {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Cover the area while preserving aspect ratio */
+}
+/* Main content area on the right */
+.right {
+  flex: 1; /* Takes up the remaining space */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #fff; /* Background color */
+  height: 100vh; /* Ensure it takes full viewport height */
+}
+
+/* New block-level div inside .right */
+.login-content {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Aligns child elements vertically */
+  justify-content: center; /* Centers the content vertically */
+  width: 100%; /* Full width of the parent */
+  height: 100%; /* Full height of the parent */
+  max-width: 500px; /* Optional: Max width for content */
+  padding: 20px; /* Optional: Add some padding around the content */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+/* Heading for the sign-in section */
+.signin-heading {
+  font-family: 'Mona Sans', Helvetica, Arial, sans-serif; /* Font stack */
+  font-size: 24px; /* Adjust the size as needed */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 20px; /* Space below the heading */
+  text-align: center; /* Center the heading text */
+}
+
+/* Container for the Google Sign-In button */
+.google-signin-container {
+  display: flex;
+  flex-direction: column; /* Stack button below the heading */
+  align-items: center; /* Center button horizontally */
+  margin-bottom: 20px; /* Space between Google button and login form */
+}
+.google-icon {
+  width: 24px; /* Adjust the size as needed */
+  height: 24px; /* Adjust the size as needed */
+  margin-right: 20px; /* Adds space between the icon and text */
+  margin-top: 1px; /* Slightly pushes the icon down */
+  vertical-align: middle; /* Ensures it stays aligned properly with text */
+}
+/* Google Sign-In button */
+.google-signin-button {
+  background-color: #fff; /* Google blue */
+  color: black;
+  padding: 16px 30px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Light border */
+  background-image: linear-gradient(145deg, #f9f9f9, #ffffff);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  width: 100%;
+}
+
+
+/* Login card styling */
+.login-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Full width of .login-content */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin-left: 20px; /* Shift the card to the left */
+}
+
+/* Login form styling */
+.login-form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  gap: 20px; /* Space between form elements */
+}
+
+/* Input fields styling */
+.input-field {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 17px;
+  font-size: 16px;
+  font-family:'Mona Sans', Helvetica, Arial, sans-serif ;
+}
+/* Container for password field and Forget? link */
+.password-label-container {
+  display: flex;
+  justify-content: space-between; /* Align label to the left and link to the right */
+  align-items: center;
+  width: 100%; /* Ensure it takes full width */
+  margin-bottom: 5px; /* Space between the label and the input field */
+  position: relative; /* Relative positioning to move "Forget?" */
+}
+/* Forget? link styling */
+/* Forget? link styling */
+.forget-password {
+  font-size: 14px;
+  color: #4285f4; /* Link color */
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  top: 16px; /* Adjust this value to move the "Forget?" link down */
+}
+/* Submit button styling */
+.submit-button {
+  background-color: #0d0c22; /* Google blue or your preferred color */
+  color: white;
+  height: 56px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 17px;
+  font-size: 14px;
+  cursor: pointer;
+}
