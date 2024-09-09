@@ -54,38 +54,6 @@
     text-align: center;
   }
   
-  .google-signin-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 20px;
-    width: 100%;
-    height: auto;
-  }
-  
-  .google-signin-button {
-    background-color: #fff;
-    color: black;
-    padding: 16px 30px;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
-    font-family: sans-serif;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(145deg, #f9f9f9, #ffffff);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
-  }
-  
-  .google-icon {
-    width: 24px; /* Adjust the size as needed */
-    height: 24px; /* Adjust the size as needed */
-    margin-right: 20px; /* Adds space between the icon and text */
-    margin-top: 1px; /* Slightly pushes the icon down */
-    vertical-align: middle; /* Ensures it stays aligned properly with text */
-  }
-  
   .login-card {
     background-color: white;
     padding: 40px;

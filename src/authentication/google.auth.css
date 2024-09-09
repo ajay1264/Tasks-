@@ -1,0 +1,53 @@
+/* 
+.google-signin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+  
+
+  .google-signin-button {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    padding: 12px 20px;
+    border-radius: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Mona Sans', Helvetica, Arial, sans-serif;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(145deg, #f9f9f9, #ffffff);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .google-signin-button:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .google-icon {
+    width: 24px;
+    height: 24px; 
+    margin-right: 20px;
+    margin-top: 1px; 
+    vertical-align: middle;
+  }
+   */
+
+
+
+   .google-signin-container .google-signin-button {
+    background-color: red !important; /* Force apply background color */
+    color: white !important;
+    padding: 20px !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
+  }
+  

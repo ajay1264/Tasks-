@@ -14,6 +14,7 @@ const App = () => {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
+      <GoogleAuth/>
     </Router>
   );
 };
