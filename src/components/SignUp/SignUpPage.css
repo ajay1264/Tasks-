@@ -88,15 +88,38 @@
     vertical-align: middle;
   }
   .divider {
-    height: 1px;
+    display: flex;
+    align-items: center;
     margin: 30px 0;
-    padding: 0;
-    overflow: visible;
-    border: none;
-    background-color: #e7e7e9;
+    position: relative;
+    height: 1px;
+    width: 100%;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #e7e7e9;
+  }
+  
+  .divider::before {
+    margin-right: 10px;
+  }
+  
+  .divider::after {
+    margin-left: 10px;
+  }
+  
+  .divider-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff; /* Same as the background color of the container */
+    padding: 0 10px;
     color: #6e6d7a;
-    text-align: center;
-    width: 100%; /* Ensure it spans the full width */
+    font-size: 14px;
   }
   .signup-card {
     background-color: white;
@@ -121,7 +144,9 @@
     font-size: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
-  
+  .input-label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
   .submit-button {
     background-color: #0d0c22;
     color: white;
@@ -132,6 +157,17 @@
     font-size: 14px;
     cursor: pointer;
   }
+
+  .terms-text {
+    font-size: 14px;
+    color: #6e6d7a;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .terms-text a {
+    color: #4285f4;
+    text-decoration: underline;
+  }
   
   .signin-link {
     font-size: 14px;
@@ -139,8 +175,19 @@
     text-decoration: none;
     cursor: pointer;
   }
-  .signup-form .input-field {
+  .email-section {
+    display: flex;
+    flex-direction: column;
     margin-top: -50px; /* Adjust this value as needed */
+  }
+  
+  .email-section .input-label {
+    margin-bottom: 10px;
+    margin-left: 11px;
+  }
+  
+  .email-section .input-field {
+    margin-bottom: 10px; 
   }
   
   
