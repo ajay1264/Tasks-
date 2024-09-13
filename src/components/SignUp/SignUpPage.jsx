@@ -27,7 +27,7 @@ const SignupPage = () => {
           <div className="google-signin-container">
             <button className="google-signin-button">
               <img src="/google_icon.png" alt="Google" className="google-icon" />
-              Sign up with Google
+             <p className='text-goole'> Sign up with Google </p>
             </button>
           </div>
           <div className="divider">
